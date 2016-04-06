@@ -1,0 +1,11 @@
+htpasswd:
+  image: kokaubeam/dockercloud-htpasswd
+  deployment_strategy: every_node
+  autodestroy: always
+  environment:
+    - "PASSWORDFILE=/auth/htpasswd"
+    - "OPTIONS=B"
+    - "USERNAME="
+    - "PASSWORD="
+  volumes:
+    - /auth:/auth:rw
