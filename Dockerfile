@@ -6,8 +6,8 @@ ADD run.sh /
 
 ENV PASSWORDFILE /auth/htpasswd
 ENV OPTIONS=
-ENV USERNAME **Username**
-ENV PASSWORD **Password**
+ENV USERNAME=
+ENV PASSWORD=
 
 VOLUME /auth
 
