@@ -16,14 +16,16 @@ With options:
 
 Recommend using this image in Docker Cloud as follows:
 
-  htpasswd:
-    image: kokaubeam/dockercloud-htpasswd
-    deployment_strategy: every_node
-    autodestroy: always
-    environment:
-      - "PASSWORDFILE=/auth/htpasswd"
-      - "OPTIONS=B"
-      - "USERNAME="
-      - "PASSWORD="
-    volumes:
-      - /auth:/auth:rw
+```
+htpasswd:
+  image: kokaubeam/dockercloud-htpasswd
+  deployment_strategy: every_node
+  autodestroy: always
+  environment:
+    - "PASSWORDFILE=/auth/htpasswd"
+    - "OPTIONS=B"
+    - "USERNAME="
+    - "PASSWORD="
+  volumes:
+    - /auth:/auth:rw
+```
