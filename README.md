@@ -1,4 +1,4 @@
-# htpasswd
+# dockercloud-htpasswd
 
 [![Deploy to Docker Cloud](https://files.cloud.docker.com/images/deploy-to-dockercloud.svg)](https://cloud.docker.com/stack/deploy/)
 
@@ -6,11 +6,15 @@ Adds a user to an htpasswd file using a container
 
 ## Usage
 
-  docker run -v $(pwd)/auth:/auth -e USERNAME="username" -e PASSWORD="password" kokaubeam/dockercloud-htpasswd
+```
+docker run -v $(pwd)/auth:/auth -e USERNAME="username" -e PASSWORD="password" kokaubeam/dockercloud-htpasswd
+```
 
 With options:
 
-	docker run -v $(pwd)/auth:/auth -e USERNAME="username" -e PASSWORD="password" -e OPTIONS="B" kokaubeam/dockercloud-htpasswd
+```
+docker run -v $(pwd)/auth:/auth -e USERNAME="username" -e PASSWORD="password" -e OPTIONS="B" kokaubeam/dockercloud-htpasswd
+```
 
 ## Usage in Docker Cloud
 
